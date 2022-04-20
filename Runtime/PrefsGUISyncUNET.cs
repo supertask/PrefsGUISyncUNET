@@ -83,7 +83,7 @@ namespace PrefsGUI.Sync.UNET
         [ServerCallback]
         void SendPrefs()
         {
-            foreach (var prefs in PrefsParam.all)
+            foreach (var prefs in PrefsParam.all.ToList())
             {
                 var key = prefs.key;
 
